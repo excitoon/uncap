@@ -1,0 +1,22 @@
+[package]
+name = "uncap"
+version = "0.1.0"
+edition = "2021"
+description = "Local captcha solver — no paid services, just algorithms"
+license = "MIT"
+repository = "https://github.com/excitoon/uncap"
+
+[dependencies]
+anyhow = "1"
+clap = { version = "4", features = ["derive"] }
+image = "0.25"
+imageproc = "0.25"
+regex = "1"
+reqwest = { version = "0.12", features = ["blocking"] }
+scraper = "0.22"
+tempfile = "3"
+url = "2"
+
+[dev-dependencies]
+assert_cmd = "2"
+predicates = "3"
